@@ -103,7 +103,7 @@ async def start_command(client: Client, message: Message):
                 asyncio.create_task(auto_del_notification(client.username, last_message, DEL_TIMER, message.command[1]))
                         
     else:   
-        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('⛩️ Aɴɪᴍᴇ', url='https://t.me/Anime_Weekends'), InlineKeyboardButton('⚡️ Oɴɢᴏɪɴɢ', url='https://t.me/Ongoing_Weekends')], [InlineKeyboardButton('🌐 Eᴍɪɴᴇɴᴄᴇ Sᴏᴄɪᴇᴛʏ', url='https://t.me/Eminence_Society')]])
+        reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton('⛩️ Aɴɪᴍᴇ', url='https://t.me/HellFire_Academy'), InlineKeyboardButton('⚡️ Oɴɢᴏɪɴɢ', url='https://t.me/Ongoing_HellFire_Academy')], [InlineKeyboardButton('🌐 𝐀ᴅᴜʟᴛ 𝐅ʟᴜx', url='https://t.me/adult_Flux')]])
 
         await message.reply_photo(
             photo = random.choice(PICS),
